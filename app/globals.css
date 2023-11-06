@@ -16,7 +16,10 @@
   }
 }
 
-body {
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow-x: hidden;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -25,3 +28,5 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+
