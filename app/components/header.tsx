@@ -47,6 +47,14 @@ export default function Header() {
                 Discover
               </Link>
             </li>
+            <li className="">
+              <Link
+                className="py-2 px-3 text-sm font-semibold rounded hover:bg-white hover:text-black"
+                href="/"
+              >
+                Shop
+              </Link>
+            </li>
           </ol>
         </div>
         <div className="max-md:hidden px-5">

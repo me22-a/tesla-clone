@@ -25,6 +25,7 @@ export default function Home() {
         <SectionImg
           title="Model X"
           subtitle="From $68,590*"
+          text="After Federal Tax Credit & Est. Gas Savings"
           bgImage="/images/background/Homepage-Model-X-Desktop-LHD.avif"
           disclaimer="*Price before incentives and savings is $79,990, excluding taxes and fees. Subject to change.
           Learn about est. gas savings."
@@ -34,8 +35,9 @@ export default function Home() {
         <SectionImg
           title="Model S"
           subtitle="From $71,090*"
+          text="After Est. Gas Savings"
           bgImage="/images/background/Homepage-Model-S-Desktop-LHD-6.22.avif"
-          disclaimer="*Price before incentives and savings is $79,990, excluding taxes and fees. Subject to change.
+          disclaimer="*Price before incentives and savings is $74,990, excluding taxes and fees. Subject to change.
           Learn about est. gas savings"
         />
       </div>

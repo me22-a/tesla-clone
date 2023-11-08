@@ -4,6 +4,7 @@ import Link from "next/link";
 type Props = {
   title: string;
   subtitle: string;
+  text?: string;
   bgImage: string;
   ImageClass?: string;
   disclaimer?: string;
@@ -12,6 +13,7 @@ type Props = {
 export default function SectionImg({
   title,
   subtitle,
+  text,
   bgImage,
   ImageClass,
   disclaimer,
@@ -25,7 +27,7 @@ export default function SectionImg({
           fill={true}
           quality={100}
           loading="lazy"
-          className={`-z-10 object-cover ${ImageClass}`}
+          className={`-z-10 object-cover object-center ${ImageClass}`}
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 75vw"
         />
         <div className="h-[100vh] pt-14 flex flex-col justify-between text-center">
@@ -33,7 +35,9 @@ export default function SectionImg({
             <article className="mt-8 text-white">
               <h1 className="text-4xl font-semibold">{title}</h1>
               <p className="text-xl">{subtitle}</p>
-
+              <sub>
+                <p>{text}</p>
+              </sub>
             </article>
           </div>
           <div className=" ">
@@ -52,9 +56,7 @@ export default function SectionImg({
               </Link>
             </div>
             <div className=" mb-4 mx-14 flex justify-center">
-              <p className="w-[560px] text-xs font-medium">
-                {disclaimer}
-              </p>
+              <p className="w-[560px] text-xs font-medium">{disclaimer}</p>
             </div>
           </div>
         </div>
