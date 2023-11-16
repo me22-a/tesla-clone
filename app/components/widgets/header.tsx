@@ -1,8 +1,8 @@
 import Link from "next/link";
-import TeslaIcon from "./icons/TeslaIcon";
-import SupportIcon from "./icons/SupportIcon";
-import EarthIcon from "./icons/EarthIcon";
-import AccountIcon from "./icons/AccountIcon";
+import TeslaIcon from "../icons/TeslaIcon";
+import SupportIcon from "../icons/SupportIcon";
+import EarthIcon from "../icons/EarthIcon";
+import AccountIcon from "../icons/AccountIcon";
 
 export default function Header() {
   return (
