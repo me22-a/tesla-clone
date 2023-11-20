@@ -7,15 +7,16 @@ export default function Motion({ children }: { children: React.ReactNode }) {
 
   return (
     <div ref={ref}>
-      <span
+      <div
+        className="h-[100vh] min-h-[100dvh] pt-14 flex flex-col justify-between text-center"
         style={{
-          transform: isInView ? "none" : "translateX(-200px)",
+          transform: isInView ? "none" : "",
           opacity: isInView ? 1 : 0,
-          transition: "all 0.8s",
+          transition: "all 0.35s",
         }}
       >
         {children}
-      </span>
+      </div>
     </div>
   );
 }

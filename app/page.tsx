@@ -19,6 +19,7 @@ export default function Home() {
               classes: "bg-[#F4F4F4A6] text-black",
             },
           ]}
+          footer="hidden"
         />
       </div>
       <div>
@@ -38,6 +39,7 @@ export default function Home() {
               classes: "bg-[#171A20CC]",
             },
           ]}
+          footer="hidden"
         />
       </div>
       <div>
@@ -58,6 +60,7 @@ export default function Home() {
               classes: "bg-[#171A20CC]",
             },
           ]}
+          footer="hidden"
         />
       </div>
       <div>
@@ -78,6 +81,7 @@ export default function Home() {
               classes: "bg-[#171A20CC]",
             },
           ]}
+          footer="hidden"
         />
       </div>
       <div>
@@ -91,6 +95,7 @@ export default function Home() {
               classes: "border-4",
             },
           ]}
+          footer="hidden"
         />
       </div>
       <div>
@@ -108,6 +113,7 @@ export default function Home() {
               classes: "bg-[#171A20CC]",
             },
           ]}
+          footer="hidden"
         />
       </div>
       <div>
@@ -125,6 +131,7 @@ export default function Home() {
               classes: "bg-[#171A20CC]",
             },
           ]}
+          footer="hidden"
         />
       </div>
       <div>
@@ -142,6 +149,7 @@ export default function Home() {
               classes: "bg-[#171A20CC]",
             },
           ]}
+          footer="hidden"
         />
       </div>
       <div>
@@ -157,6 +165,7 @@ export default function Home() {
           ]}
         />
       </div>
+    
     </div>
   );
 }

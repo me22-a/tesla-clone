@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 type Props = {
-  pictureSrc: string | null;
+  pictureSrc?: string | null;
   videoSrc?: string | null;
 };
 
