@@ -3,6 +3,7 @@ import { Headline } from "../ui/headline";
 import { Button } from "../ui/button";
 import { Cover } from "./cover";
 import Motion from "./motion";
+import { footerData } from "@/app/data/footerData";
 
 type Item = {
   title?: string;
@@ -17,52 +18,19 @@ type Props = {
   disclaimer?: string;
   pictureSrc?: string;
   videoSrc?: string;
-  items?: Array<Item>;
+  items?: Item[];
 };
 
-const Items = [
-  {
-    text: "Tesla © 2023",
-    link: "https://www.tesla.com/",
-  },
-  {
-    text: "Privacy & Legal",
-    link: "https://www.tesla.com/privacy",
-  },
-  {
-    text: "Vehicle Recalls",
-    link: "https://www.tesla.com/recalls",
-  },
-  {
-    text: "Contact",
-    link: "https://www.tesla.com/contact",
-  },
-  {
-    text: "News",
-    link: "https://www.tesla.com/news",
-  },
-  {
-    text: "Get Updates",
-    link: "https://www.tesla.com/get-updates",
-  },
-  {
-    text: "Locations",
-    link: "https://www.tesla.com/locations",
-  },
-];
-
-export default function Section(props: Props) {
-  const {
-    title,
-    subtitle,
-    highlight,
-    footer,
-    disclaimer,
-    pictureSrc,
-    videoSrc,
-    items = [],
-  } = props;
-
+export default function Section({
+  title,
+  subtitle,
+  highlight,
+  footer,
+  disclaimer,
+  pictureSrc,
+  videoSrc,
+  items = [],
+}: Props) {
   return (
     <div className="static">
       <section className={`relative flex flex-col snap-center`}>
@@ -77,10 +45,10 @@ export default function Section(props: Props) {
               <p className="w-[560px] text-xs font-medium">{disclaimer}</p>
             </div>
             <div className={`w-full p-6 flex justify-center ${footer}`}>
-              <ul className={`flex text-xs font-medium space-x-4 `}>
-                {Items.map((item) => (
-                  <li key={item.text}>
-                    <a href={item.link}>{item.text}</a>
+              <ul className={`flex text-xs font-medium space-x-4 max-md:hidden`}>
+                {footerData.map((item) => (
+                  <li key={item.title}>
+                    <a href={item.link}>{item.title}</a>
                   </li>
                 ))}
               </ul>

@@ -1,13 +1,13 @@
 import Link from "next/link";
 
-interface Item {
+type Item = {
   title?: string;
   classes?: string;
-}
+};
 
-interface Props {
+type Props = {
   items: Array<Item>;
-}
+};
 
 export const Button = (props: Props) => {
   const { items = [] } = props;
@@ -15,14 +15,14 @@ export const Button = (props: Props) => {
   return (
     <div className="flex justify-center gap-6 p-8 max-md:flex-wrap">
       {items.map(({ title, classes }) => (
-        <div
+        <button
           key={`${title}`}
           className={`w-[264px] py-2.5 text-sm font-semibold rounded ${classes}`}
         >
           <Link href="#">
-            <span>{title}</span>
+            <p>{title}</p>
           </Link>
-        </div>
+        </button>
       ))}
     </div>
   );
