@@ -16,7 +16,9 @@
   }
 }
 
-body {
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -24,4 +26,8 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+html::-webkit-scrollbar, ::-webkit-scrollbar-thumb{
+  display: none;
 }
