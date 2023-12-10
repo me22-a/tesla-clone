@@ -3,8 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./components/widgets/header";
 
-const inter = Inter({ subsets: ["latin"] });
-
+const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
   title: "Electric Cars, Solar & Clean Energy",
