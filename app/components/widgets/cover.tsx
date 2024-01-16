@@ -10,7 +10,7 @@ export const Cover = ({ pictureSrc, videoSrc }: Props) => {
     <>
       {pictureSrc && (
         <Image
-          src={pictureSrc}
+          src={pictureSrc!}
           alt="background image"
           fill={true}
           quality={75}
