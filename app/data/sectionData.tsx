@@ -63,7 +63,7 @@ export const sectionData = [
   },
   {
     type: "picture",
-    pictureSrc: "/images/background/Desktop-solarPanels.avif",
+    pictureSrc: "/images/background/Desktop-SolarPanels.avif",
     title: "Solar Panels",
     subtitle: "Schedule a Virtual Consultation",
     items: [

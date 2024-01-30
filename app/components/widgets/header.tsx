@@ -23,8 +23,8 @@ export default function Header() {
           </Link>
         </div>
 
-        <div className="max-md:hidden px-4 ">
-          <ol className=" flex justify-center items-center space-x-3 group/item">
+        <div className=" px-4 group/item max-lg:hidden">
+          <ol className=" flex justify-center items-center space-x-3 ">
             {[
               { label: "Vehicles", href: "/", dropdown: <Vehicle /> },
               { label: "Energy", href: "/", dropdown: <Energy /> },
@@ -39,7 +39,7 @@ export default function Header() {
                 >
                   {item.label}
                 </Link>
-                <div className=" hidden group-hover/dropdown:block absolute w-full h-max left-0 top-0">
+                <div className=" hidden group-hover/dropdown:block absolute overflow-scroll w-full h-max left-0 top-0">
                   {item.dropdown}
                 </div>
               </li>
@@ -47,7 +47,7 @@ export default function Header() {
           </ol>
         </div>
 
-        <div className="max-md:hidden pl-4 z-40 ">
+        <div className="max-md:hidden pl-4 z-40  max-lg:hidden">
           <ol className="flex justify-end items-center space-x-3">
             {[
               { icon: <SupportIcon />, href: "/" },
