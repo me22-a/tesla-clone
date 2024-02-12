@@ -16,7 +16,7 @@ export const Cover = ({ pictureSrc, videoSrc }: Props) => {
           quality={75}
           loading="lazy"
           priority={false}
-          className={`-z-10 object-cover object-center absolute`}
+          className={`-z-10 object-cover object-center h-full w-full absolute`}
           sizes="(max-width: 768px) 95vw, (max-width: 1200px) 90vw"
         />
       )}
